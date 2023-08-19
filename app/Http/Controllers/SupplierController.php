@@ -43,13 +43,10 @@ class SupplierController extends Controller
     {
         $supplier = new Supplier();
 
-        $supplier->supplier_id = $request->supplier_id;
         $supplier->supplier_name = $request->supplier_name;
         $supplier->supplier_address = $request->supplier_address;
         $supplier->supplier_number = $request->supplier_number;
         $supplier->supplier_email = $request->supplier_email;
-        $supplier->products = $request->products;
-
 
         $supplier->save();
 

@@ -44,13 +44,11 @@ class ProductController extends Controller
     {
         $product = new Product();
 
-        $product->item_code = $request->item_code;
         $product->item_name = $request->item_name;
         $product->supplier_id = $request->supplier_id;
         $product->quantity = $request->quantity;
         $product->unit_price = $request->unit_price;
         $product->status = $request->status;
-
 
         $product->save();
 
