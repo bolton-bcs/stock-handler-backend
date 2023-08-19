@@ -14,6 +14,7 @@ return new class extends Migration {
     {
         Schema::create('suppliers', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('supplier_id');
             $table->string('supplier_name');
             $table->string('supplier_address');
             $table->string('supplier_number');

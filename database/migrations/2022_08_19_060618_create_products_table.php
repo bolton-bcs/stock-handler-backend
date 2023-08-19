@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('product_id');
             $table->bigInteger('supplier_Id')->unsigned()->index();;
             $table->string('item_name');
             $table->string('quantity');

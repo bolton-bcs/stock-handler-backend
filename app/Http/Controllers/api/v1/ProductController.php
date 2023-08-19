@@ -45,6 +45,7 @@ class ProductController extends Controller
     {
         $product = new Product();
 
+        $product->product_id = $request->product_id;
         $product->item_name = $request->item_name;
         $product->supplier_id = $request->supplier_id;
         $product->quantity = $request->quantity;
